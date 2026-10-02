@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>沖繩 10/14–10/19</title>
 <style>
-:root{--bg:#EAF4F3;--card:#fff;--ink:#12303A;--mute:#5B7881;--sea:#0B4F5E;--pink:#D93A5C;--line:#B9D6D6;--chip:#D5ECEA;
+:root{--bg:#EFE6D6;--card:#FBF7EF;--ink:#3B2F25;--mute:#7A6A58;--sea:#7A5A3A;--pink:#8F5E34;--ontag:#fff;--line:#D8C8AE;--chip:#E6D8C0;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1F25;--card:#14323B;--ink:#E6F2F1;--mute:#93B3B8;--sea:#7FD1D6;--pink:#FF7C97;--line:#2B5560;--chip:#1D434D}}
-:root[data-theme="dark"]{--bg:#0C1F25;--card:#14323B;--ink:#E6F2F1;--mute:#93B3B8;--sea:#7FD1D6;--pink:#FF7C97;--line:#2B5560;--chip:#1D434D}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#241C15;--card:#33281F;--ink:#F1E7D6;--mute:#BBA98F;--sea:#D9B98C;--pink:#E0A878;--ontag:#2A1E14;--line:#55443A;--chip:#45372B}}
+:root[data-theme="dark"]{--bg:#241C15;--card:#33281F;--ink:#F1E7D6;--mute:#BBA98F;--sea:#D9B98C;--pink:#E0A878;--ontag:#2A1E14;--line:#55443A;--chip:#45372B}
 *{box-sizing:border-box}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;max-width:560px;margin-inline:auto}
 header{padding:20px 16px 8px;display:flex;justify-content:space-between;align-items:center;gap:8px}
 h1{margin:0;font-size:26px;letter-spacing:.04em;color:var(--sea)}
 #ed{border:1px solid var(--sea);background:none;color:var(--sea);border-radius:14px;padding:6px 14px;font:inherit;cursor:pointer}
-#ed.on{background:var(--pink);border-color:var(--pink);color:#fff}
+#ed.on{background:var(--pink);border-color:var(--pink);color:var(--ontag)}
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:8px;overflow-x:auto;padding:8px 16px;border-bottom:1px solid var(--line)}
 nav button{flex:0 0 auto;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:14px;padding:6px 12px;font:inherit;line-height:1.2;text-align:center;cursor:pointer}
 nav button b{display:block;font-size:17px}
@@ -33,7 +33,7 @@ li.s:last-child::before{display:none}
 .n{position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--sea);color:var(--bg);font-weight:700;text-align:center;line-height:28px;font-size:14px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
 .card h3{margin:0;font-size:17px}
-.tag{display:inline-block;background:var(--pink);color:#fff;border-radius:8px;padding:0 8px;font-size:13px;margin-top:4px}
+.tag{display:inline-block;background:var(--pink);color:var(--ontag);border-radius:8px;padding:0 8px;font-size:13px;margin-top:4px}
 .note{margin:4px 0 0;font-size:14px;color:var(--mute)}
 .row{margin:6px 0 0;font-size:15px}
 .row i{font-style:normal;margin-right:4px}
@@ -64,53 +64,60 @@ var D=[
 {ic:"✈️",n:"回程 BR185",res:"10/19（一）20:20",note:"那霸機場",m:"那霸機場"}]},
 {d:"10/14",w:"三",h:"10/14（三）",t:"首里城・PARCO CITY",stay:"住 THE NEST那覇",s:[
 {n:"THE NEST那覇 飯店放行李",m:"THE NEST那覇"},
-{n:"達摩寺・首里城",mv:"🚇 31分"},
-{n:"午餐 A LONG VACATION.",hr:"約 11:00–24:00（午餐至 15:00 LO）・無休",res:"已訂位 12:00",mv:"🚇 29分"},
-{n:"琉貿百貨",note:"停留 30 分–1 小時"},
-{n:"PARCO CITY",hr:"約 10:00–22:00（各店不同）",note:"看夕陽＋逛街",buy:["西村","卡比","極味屋"],mv:"🚗 19分"},
+{n:"達摩寺・首里城",note:"首里城正殿內部 11/23 起才開放（需預約），這天可逛其他區域",hr:"首里城 免費區 8:00–18:30・付費區 8:30–18:00（依季節延長）",m:"首里城",mv:"🚇 31分"},
+{n:"午餐 A LONG VACATION.",res:"已訂位 12:00",hr:"約 11:00–24:00（午餐至 15:00 LO）・無休",mv:"🚇 29分"},
+{n:"琉貿百貨",note:"停留 30 分–1 小時",hr:"點地圖查看"},
+{n:"PARCO CITY",note:"看夕陽＋逛街",buy:["西村","卡比","極味屋"],hr:"約 10:00–22:00（各店不同）",mv:"🚗 19分"},
 {n:"晚餐 燒肉",note:"店家還沒決定",eat:["燒肉"]}]},
 {d:"10/15",w:"四",h:"10/15（四）",t:"租車・糸滿・玉泉洞",stay:"住 THE NEST那覇",s:[
 {n:"租車 美栄橋站前 外語櫃檯",note:"取車 10/15 09:00・還車 10/18 17:00",m:"美栄橋駅"},
-{n:"糸滿魚市場",hr:"糸満漁民食堂 11:30 開門",note:"糸満漁民食堂 11:30 開門",eat:["市場早午餐"]},
-{n:"玉泉洞"},
-{n:"Lias",hr:"專門店約 10:00–21:00・餐廳約 11:00–22:00（各店不同）",mv:"🚗 23分"},
-{n:"炭火焼肉ぶち 久茂地2号店",res:"已訂位 18:40",eat:["燒肉"],note:"飯後可逛國際通"}]},
+{n:"糸滿魚市場",note:"市場早午餐",hr:"糸満漁民食堂 11:30 開門",eat:["市場早午餐"],m:"糸満漁民食堂"},
+{n:"玉泉洞",hr:"9:00–17:30（最後受付 16:00）・無休",m:"おきなわワールド 玉泉洞"},
+{n:"Iias",hr:"專門店約 10:00–21:00・餐廳約 11:00–22:00（各店不同）",m:"iias 沖縄豊崎",mv:"🚗 23分"},
+{n:"炭火焼肉ぶち 久茂地2号店",res:"已訂位 18:40",hr:"點地圖查看",eat:["燒肉"],note:"飯後可逛國際通"}]},
 {d:"10/16",w:"五",h:"10/16（五）",t:"波上宮・港川・美國村煙火",stay:"換住 URUUMI ONNA POOL VILLA（10/16–18）",s:[
-{n:"波上宮",mv:"🚶 15分 / 🚗 4分"},
-{n:"泊港魚市場",mv:"🚗 8分"},
-{n:"港川外人住宅 港川",eat:["Cocoroar CAFE 舒芙蕾","サンチクジュ 港川店（拉麵）","雞湯蕎麥麵屋 石工夫（拉麵）"],mv:"🚗 16分"},
-{n:"永旺夢樂城",hr:"專門店 10:00–22:00・餐廳街 10:00–23:00・無休"},
-{n:"美國村煙火",res:"20:00 放煙火"}],
+{n:"波上宮",hr:"點地圖查看",mv:"🚶 15分 / 🚗 4分"},
+{n:"泊港魚市場",hr:"點地圖查看",mv:"🚗 8分"},
+{n:"港川外人住宅 港川",hr:"各店營業時間點地圖查看",eat:["Cocoroar CAFE 舒芙蕾","サンチクジュ 港川店（拉麵）","雞湯蕎麥麵屋 石工夫（拉麵）"],mv:"🚗 16分"},
+{n:"永旺夢樂城",hr:"專門店 10:00–22:00・餐廳街 10:00–23:00・無休",m:"イオンモール沖縄ライカム"},
+{n:"美國村煙火",res:"20:00 放煙火",hr:"點地圖查看",m:"アメリカンビレッジ"}],
 xh:"路上經過的店家",x:[
-{n:"Hoppepan",hr:"只開週五、六、日",note:"麵包店，只開週五六日"},
-{n:"Taco Rice Cafe Kijimuna",hr:"開到 18:00",note:"飯店旁邊的塔可，開到 6 點"},
-{n:"BANTA CAFE by Hoshino Resorts",note:"建築比飲料更有記憶點"},
-{n:"BAYWICH",note:"三明治"},
-{n:"Blue Entrance Kitchen 沖縄総本店",note:"塔可"},
-{n:"ザ・タコライスハウス 恩納うるま店",note:"塔可"}]},
+{n:"Hoppepan",note:"麵包店",hr:"只開週五、六、日"},
+{n:"Taco Rice Cafe Kijimuna",note:"飯店旁邊的塔可",hr:"開到 18:00"},
+{n:"BANTA CAFE by Hoshino Resorts",note:"建築比飲料更有記憶點",hr:"點地圖查看"},
+{n:"BAYWICH",note:"三明治",hr:"點地圖查看"},
+{n:"Blue Entrance Kitchen 沖縄総本店",note:"塔可",hr:"點地圖查看"},
+{n:"ザ・タコライスハウス 恩納うるま店",note:"塔可",hr:"點地圖查看"}]},
 {d:"10/17",w:"六",h:"10/17（六）",t:"美麗海水族館・古宇利島",stay:"住 URUUMI ONNA POOL VILLA",s:[
-{n:"早午餐 潛水員牛排",hr:"10:30 開門（10:00 排隊登記）",note:"10:00 排隊登記・10:30 開門。要等的話先逛：21世紀海灘（走路 15 分）、許田休息站（開車 12 分）",eat:["牛排"],mv:"🚗 39分"},
-{n:"CAMEL SANDWICH & SMOOTHIE",note:"會餓的話繼續吃三明治",eat:["三明治","冰沙"]},
-{n:"美麗海水族館"},
-{n:"The Sinmay",eat:["現刨黑糖拿鐵"]},
-{n:"古宇利島",note:"心型岩",eat:["下午茶 蝦蝦飯"]},
-{n:"晚餐 大家 阿古豬",res:"已訂位 18:00",eat:["阿古豬"],buy:["甜點要買"]}]},
+{n:"早午餐 潛水員牛排",note:"10:00 排隊登記。要等的話先逛：21世紀海灘（走路 15 分）、許田休息站（開車 12 分）",hr:"10:30 開門",eat:["牛排"],mv:"🚗 39分"},
+{n:"CAMEL SANDWICH & SMOOTHIE",note:"會餓的話繼續吃三明治",hr:"點地圖查看",eat:["三明治","冰沙"]},
+{n:"美麗海水族館",hr:"8:30–18:30（最後入館 17:30）",m:"沖縄美ら海水族館"},
+{n:"The Sinmay",hr:"點地圖查看",eat:["現刨黑糖拿鐵"]},
+{n:"古宇利島",note:"心型岩",hr:"各店營業時間點地圖查看",eat:["下午茶 蝦蝦飯"]},
+{n:"晚餐 大家 阿古豬",res:"已訂位 18:00",hr:"點地圖查看",eat:["阿古豬"],buy:["甜點要買"]}]},
 {d:"10/18",w:"日",h:"10/18（日）",t:"自由日・一心壽喜燒",stay:"換住 HOTEL ANTEROOM NAHA",s:[
 {n:"想吃什麼就吃"},
 {n:"想逛什麼就逛"},
-{n:"下午茶 一心壽喜燒",res:"已訂位 14:00",eat:["壽喜燒"]},
+{n:"下午茶 一心壽喜燒",res:"已訂位 14:00",hr:"點地圖查看",eat:["壽喜燒"]},
 {n:"17:00 還車，去機場"}]},
-{d:"10/19",w:"一",h:"10/19（一）",t:"回程",fl:"✈️ BR185 20:20 返程",s:[{n:"自由安排，晚上搭機",note:"行程還沒填，可再補"}]},
+{d:"10/19",w:"一",h:"10/19（一）",t:"天久・瀨長島・美國村",fl:"✈️ BR185 20:20 返程",s:[
+{n:"天久琉貿樂市 天久りうぼう",hr:"點地圖查看",m:"天久りうぼう"},
+{n:"瀨長島",hr:"點地圖查看"},
+{n:"美國村",hr:"點地圖查看",m:"アメリカンビレッジ"}]},
 {d:"備選",w:"想去",h:"備選",t:"沒排進去但可以去",nn:1,s:[
-{ic:"💡",n:"燒肉蛋飯糰",note:"想吃"},
-{ic:"💡",n:"漢堡",note:"想吃"},
-{ic:"💡",n:"鹽巴冰淇淋",note:"想吃"},
-{ic:"💡",n:"美國村",note:"想逛"},
-{ic:"💡",n:"部瀨名海中公園",note:"想去"},
-{ic:"💡",n:"Panza 溜索",note:"想玩"}]}
+{ic:"💡",n:"鐘乳洞 CAVE OKINAWA",hr:"點地圖查看"},
+{ic:"💡",n:"萬座毛",hr:"點地圖查看"},
+{ic:"💡",n:"部瀨名海中公園",hr:"點地圖查看",m:"部瀬名海中公園"},
+{ic:"💡",n:"Panza 溜索",hr:"點地圖查看"},
+{ic:"💡",n:"燒肉蛋飯糰",note:"想吃（店家未定）"},
+{ic:"💡",n:"漢堡",note:"想吃（店家未定）"},
+{ic:"💡",n:"鹽巴冰淇淋",note:"想吃（店家未定）"},
+{ic:"💡",n:"沖繩餅乾",note:"想買"},
+{ic:"💡",n:"那霸機場 蘋果派",note:"想買",m:"那霸機場"},
+{ic:"💡",n:"在地超市",note:"想買"}]}
 ];
 var ORIG=JSON.stringify(D),edit=false,cur=0,rs=false,DB=null;
-try{var L=localStorage.getItem("okv2");if(L)D=JSON.parse(L)}catch(e){}
+try{var L=localStorage.getItem("okv3");if(L)D=JSON.parse(L)}catch(e){}
 function fill(){var o=JSON.parse(ORIG);D.forEach(function(p,a){["s","x"].forEach(function(l){(p[l]||[]).forEach(function(s){if(s.hr===undefined)((o[a]||{})[l]||[]).forEach(function(t){if(t.n===s.n&&t.hr)s.hr=t.hr})})})})}
 try{fill()}catch(e){}
 var tabs=document.getElementById("tabs"),panel=document.getElementById("panel"),ed=document.getElementById("ed");
@@ -119,7 +126,7 @@ function sp(v){return v.split(/[、,，]/).map(function(x){return x.trim()}).fil
 function q(s){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent((s.m||s.n.replace(/^(午餐|晚餐|早午餐|下午茶)\s*/,""))+" 沖繩")}
 function save(){
  var j=JSON.stringify(D);
- try{localStorage.setItem("okv2",j)}catch(e){}
+ try{localStorage.setItem("okv3",j)}catch(e){}
  if(DB)try{DB.doc("trip/data").set({json:j}).catch(function(){})}catch(e){}
 }
 function fld(lb,f,v,l,i){return '<label>'+lb+'<input data-l="'+l+'" data-i="'+i+'" data-f="'+f+'" value="'+E(v)+'"></label>'}
